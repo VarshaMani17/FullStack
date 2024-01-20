@@ -1,0 +1,82 @@
+p
+{
+    color:royalblue;
+}
+li
+{
+font-family:cursive;
+}
+.classid
+{
+ background-color:honeydew;
+}
+ul
+{
+    list-style-type: none;
+}
+#head1
+{
+color:blueviolet;
+font-variant: small-caps;
+}
+input[type="text"]{
+    border:2px solid black;
+}
+input[type="password"]{
+    border:2px solid rgb(179, 16, 16);
+}
+table th
+{
+    color:darkred;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+div h2{
+    border-width :120px;
+    border-style:groove;
+    padding: 5px;
+    border:2px solid black;
+}
+.flex
+{   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(180, 247, 247);
+}
+.items
+{
+    border: 2px solid black;
+    text-align: center;
+    padding:20px;
+    background-color: rgb(213, 181, 244);
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background-color: rgb(180, 247, 247);
+}
+.inlinegrid
+{
+    display:inline-grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background-color: rgb(180, 247, 247);
+}
+
+@media(max-width:425px)
+{
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(min-width:768px)
+{
+    .grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
